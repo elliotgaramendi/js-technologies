@@ -3,7 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout
-  url="http://localhost:4321/about"
+  url=`${import.meta.env.FRONTEND_URL}/about`
   title="About frameworks and libraries for JavaScript I JS Technologies"
   description="On the best JavaScript frameworks and libraries for frontend web development that allow optimal use of HTML, CSS and JavaScript by Elliot Garamendi."
   image="https://www.svgrepo.com/show/353925/javascript.svg"

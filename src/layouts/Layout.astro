@@ -4,7 +4,7 @@ import Header from "../components/Header.astro";
 import "../styles/css/index.css";
 
 let { url, title, description, image } = Astro.props;
-url || (url = "http://localhost:4321");
+url || (url = import.meta.env.FRONTEND_URL);
 title ||
   (title = "JS Tachnologies I Best Framework and Libreries for JavaScript");
 description ||

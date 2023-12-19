@@ -2,12 +2,12 @@
 import Card from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
 
-const response = await fetch("http://localhost:4321/data.json");
+const response = await fetch(`${import.meta.env.FRONTEND_URL}/data.json`);
 const data = await response.json();
 ---
 
 <Layout
-	url="http://localhost:4321"
+	url={import.meta.env.FRONTEND_URL}
 	title="JS Technologies I Best Frameworks and Libraries for JavaScript"
 	description="The best JavaScript frameworks and libraries for frontend web development that enable optimal use of HTML, CSS and JavaScript by Elliot Garamendi."
 	image="https://www.svgrepo.com/show/353925/javascript.svg"

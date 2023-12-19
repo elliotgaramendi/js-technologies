@@ -1,4 +1,5 @@
 ---
+import { ViewTransitions } from "astro:transitions";
 import Header from "../components/Header.astro";
 import "../styles/css/index.css";
 
@@ -34,6 +35,7 @@ image ||
     <link rel="canonical" href={url} />
     <meta name="generator" content={Astro.generator} />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <ViewTransitions />
   </head>
   <body>
     <Header />

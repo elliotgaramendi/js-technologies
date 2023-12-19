@@ -1,0 +1,88 @@
+---
+import type { GetStaticPaths } from "astro";
+import Layout from "../../layouts/Layout.astro";
+export interface Technology {
+  id: number;
+  title: string;
+  slug: string;
+  subtitle: string;
+  description: string;
+  content: string;
+  image: string;
+  url: string;
+  github: string;
+}
+
+export const getStaticPaths = (async () => {
+  const response = await fetch("http://localhost:4321/data.json");
+  const data = await response.json();
+  return data.map((element: Technology) => ({
+    params: { slug: element.slug },
+    props: element,
+  }));
+}) satisfies GetStaticPaths;
+
+const {
+  props: {
+    id,
+    title,
+    slug,
+    subtitle,
+    description,
+    content,
+    image,
+    url,
+    github,
+  },
+}: { props: Technology } = Astro;
+---
+
+<Layout
+  url={`http://localhost:4321/technologies/${slug}`}
+  title={`${title} I ${subtitle} I JS Technologies`}
+  description={description}
+  image={image}
+>
+  <section class="py-20">
+    <div class="container px-4 mx-auto flex flex-col gap-8">
+      <a href={url} target="_blank" rel="noopener noreferrer">
+        <h1 class="text-sky-500 text-4xl font-black text-center">
+          {title}
+        </h1>
+      </a>
+      <h2 class="text-zinc-400 text-2xl font-black text-center">
+        {subtitle}
+      </h2>
+      <p>{description}</p>
+      <p>{content}</p>
+      <div class="flex flex-col items-center gap-2">
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          <img
+            src={image}
+            alt={title}
+            width="256"
+            height="256"
+            loading="lazy"
+            class="w-64 h-64 object-contain"
+          />
+        </a>
+        <div class="flex gap-2">
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-2 py-0.5 border-2 border-sky-500 rounded-lg bg-sky-500 font-semibold transition-all hover:brightness-125"
+            >Page</a
+          >
+          <a
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-2 py-0.5 border-2 border-sky-500 rounded-lg bg-transparent font-semibold transition-all hover:bg-sky-500 hover:brightness-125"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

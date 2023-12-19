@@ -7,7 +7,7 @@ const {
 <li
   class="rounded-2xl overflow-hidden shadow-sm shadow-sky-500 flex flex-col transition-shadow hover:shadow-md hover:shadow-sky-500"
 >
-  <a href=`#${id}-${slug}`>
+  <a href={`/technologies/${slug}`}>
     <img
       src={image}
       alt={title}
@@ -22,7 +22,7 @@ const {
     <h3 class="text-zinc-400 font-semibold">{subtitle}</h3>
     <p class="text-sm">{description}</p>
     <a
-      href="#"
+      href={`/technologies/${slug}`}
       class="px-2 py-0.5 mt-auto border-2 rounded-lg border-sky-500 bg-sky-500 font-semibold text-center transition-all hover:brightness-125"
     >
       Learn

@@ -1,5 +1,6 @@
 ---
 import Card from "../components/Card.astro";
+import Header from "../components/Header.astro";
 import "../styles/css/index.css";
 ---
 
@@ -12,9 +13,9 @@ import "../styles/css/index.css";
 		<title>JS Technologies</title>
 	</head>
 	<body>
+		<Header />
 		<section class="py-20">
 			<div class="container px-4 mx-auto flex flex-col gap-8">
-				<h1>JS Technologies</h1>
 				<ul class="grid grid-cols-[repeat(auto-fit,_minmax(320px,_1fr))] gap-6">
 					<Card />
 					<Card />

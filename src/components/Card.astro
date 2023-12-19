@@ -15,12 +15,22 @@ const {
       height="360"
       loading="lazy"
       class="w-full h-48 object-cover"
+      transition:name={`technology-image-${id}`}
     />
   </a>
   <div class="h-full p-3 bg-zinc-800 flex flex-col gap-2">
-    <h2 class="text-lg font-bold">{title}</h2>
-    <h3 class="text-zinc-400 font-semibold">{subtitle}</h3>
-    <p class="text-sm">{description}</p>
+    <h2 class="text-lg font-bold" transition:name={`technology-title-${id}`}>
+      {title}
+    </h2>
+    <h3
+      class="text-zinc-400 font-semibold"
+      transition:name={`technology-subtitle-${id}`}
+    >
+      {subtitle}
+    </h3>
+    <p class="text-sm" transition:name={`technology-description-${id}`}>
+      {description}
+    </p>
     <a
       href={`/technologies/${slug}`}
       class="px-2 py-0.5 mt-auto border-2 rounded-lg border-sky-500 bg-sky-500 font-semibold text-center transition-all hover:brightness-125"

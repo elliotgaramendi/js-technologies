@@ -1,11 +1,17 @@
 ---
 import Card from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
+
 const response = await fetch("http://localhost:4321/data.json");
 const data = await response.json();
 ---
 
-<Layout>
+<Layout
+	url="http://localhost:4321"
+	title="JS Technologies I Best Frameworks and Libraries for JavaScript"
+	description="The best JavaScript frameworks and libraries for frontend web development that enable optimal use of HTML, CSS and JavaScript by Elliot Garamendi."
+	image="https://www.svgrepo.com/show/353925/javascript.svg"
+>
 	<section class="py-20">
 		<div class="container px-4 mx-auto flex flex-col gap-8">
 			<ul class="grid grid-cols-[repeat(auto-fit,_minmax(320px,_1fr))] gap-6">

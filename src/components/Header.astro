@@ -1,3 +1,7 @@
+---
+import LikeButton from "./LikeButton";
+---
+
 <header class="fixed z-50 top-0 w-full bg-sky-500">
   <nav class="py-4">
     <div class="container px-4 mx-auto flex items-center justify-between">
@@ -36,6 +40,11 @@
           </a>
         </li>
       </ul>
+      <LikeButton
+        client:visible
+        transition:name="like-button"
+        transition:persist
+      />
     </div>
   </nav>
 </header>

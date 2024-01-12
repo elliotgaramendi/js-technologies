@@ -1,47 +1,38 @@
-# Astro Starter Kit: Minimal
+# [JS Technologies](https://js-technologies.netlify.app/)
 
-```sh
-npm create astro@latest -- --template minimal
-```
+[![JS Technologies](https://i.postimg.cc/NB49c3py/js-technologies.png)](https://js-technologies.netlify.app/)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## 📜 Descripción 📜
+Los mejores frameworks y bibliotecas de JavaScript para el desarrollo web frontend que permiten un uso óptimo de HTML, CSS y JavaScript por Elliot Garamendi.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 💻 Instalación 💻
+- Ubicarse en la carpeta que contendrá el proyecto
+- Abrir terminal de comandos
+  - git clone https://github.com/elliotgaramendi/js-technologies.git
+  - cd js-technologies
+  - git checkout ${rama}
+    - Especificar la rama de interés
+  - cp .env.example .env.local
+    - Editar los valores de las variables de entornos acorde a lo requerido.
+  - npm install
 
-## 🚀 Project Structure
+## 👨‍💻 Desarrollo 👨‍💻
+  - Seguir los pasos de instalación
+  - npm run dev
+    - Inicia la aplicación en modo de desarrollo.
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🖥 Producción 🖥
+  - Seguir los pasos de instalación
+  - npm run build
+    - Compila el proyecto y generar una versión optimizada de la aplicación para producción.
+  - npm run preview
+    - Inicia la aplicación en previsualización de producción.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 📚 Tecnologías principales 📚
+| Tecnología   | Versión | Descripción                                                                                         |
+|--------------|---------|-----------------------------------------------------------------------------------------------------|
+| astro        | 4.0.6   | Marco web modular y rápido, centrado en optimizar velocidad y simplicidad en desarrollo.            |
+| react        | 18.2.0  | Biblioteca eficiente para construir interfaces de usuario (UI) reactivas y reutilizables.           |
+| tailwindcss  | 3.3.7   | Marco de diseño de bajo nivel con clases de utilidad para desarrollo rápido de interfaces.          |
+| typescript   | 5.3.3   | Superset de JavaScript que añade tipado estático opcional, mejorando la mantenibilidad del código.  |
+| @fontsource  | 5.0.17  | Simplifica integración y gestión de fuentes tipográficas en proyectos web.                          |

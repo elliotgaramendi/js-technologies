@@ -1,6 +1,7 @@
 {
   "name": "JS Technologies",
   "short_name": "JS Tech",
+  "description": "The best JavaScript frameworks and libraries for frontend web development that enable optimal use of HTML, CSS and JavaScript by Elliot Garamendi.",
   "version": "1.0.0",
   "icons": [
     {
@@ -25,8 +26,8 @@
       "purpose": "maskable"
     }
   ],
-  "start_url": "./",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#010508",
-  "theme_color": "#0ea5e9"
+  "theme_color": "#f7df1e"
 }
